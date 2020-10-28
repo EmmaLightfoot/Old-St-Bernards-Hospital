@@ -1,0 +1,469 @@
+---
+title: "Online Resource 2"
+author: "Emma Lightfoot"
+date: "19/12/2019"
+output: html_document
+---
+
+**Sea, Sickness and Cautionary Tales: A multi-isotope study from a post-Mediaeval hospital at the city-port of Gibraltar (AD 1462–1704)**
+Emma Lightfoot*, Emma Pomeroy, Jennifer Grant, Tamsin C. O’Connell, Petrus le Roux, Sarah Inskip, Sam Benady, Clive Finlayson, Geraldine Finlayson and Kevin Lane
+Archaeological and Anthropological Sciences
+*Corresponding author: McDonald Institute for Archaeological Research, University of Cambridge, Downing Street, Cambridge, CB2 3ER, UK; ELFL2@cam.ac.uk
+
+**Prelimlinary code**
+
+Load libraries to be used:
+```{r}
+library(readr)
+library(ggplot2)
+library(ggpubr)
+library(car)
+library(magrittr)
+library(ggExtra)
+```
+
+Load data file:
+Save/export SI file called "Online Resource 3" as a .csv to the same folder as this file. Change the name of the file to 'Data.csv'. Then load datafile:
+```{r}
+Data <- read_csv("Data.csv")
+```
+
+Factor data by species:
+```{r}
+Data$Species = factor(Data$Species, levels=c('Human','Sheep/goat','Cattle', 'Pig', 'Fish', 'Bird'))
+```
+
+_Create subsets of data to be used:_
+Just Old St Bernard's hospital (hereafter OSB)
+```{r}
+OSB <- subset (Data, Site == "Old St Bernard's")
+```
+
+Just domesticates from OSB
+```{r}
+OSBDom <- subset (OSB, Species !="Human" & Species != "Fish" & Species !="Bird")
+```
+
+Just sheep/goat from OSB
+```{r}
+OSBSG <- subset (OSB, Species == "Sheep/goat")
+```
+
+Just cattle from OSB
+```{r}
+OSBCow <- subset (OSB, Species == "Cattle")
+```
+
+Just pigs from OSB
+```{r}
+OSBPig <- subset (OSB, Species == "Pig")
+```
+
+Just humans from OSB
+```{r}
+OSBHuman <- subset (OSB, Species == "Human")
+```
+
+Humans from other Iberian sites
+```{r}
+Iberia <-subset(Data, Species=="Human" & Site != "Haslar" & Site != "Plymouth" & Site != "Mary Rose")
+```
+
+Humans from naval sites
+```{r}
+naval <- subset(Data, Species=="Human" & Site !="Ecija" & Site != "Royal Family" & Site !="La Torrecila" & Site !="Colegiata"& Site !="Benipeixcar" & Site !="El Raval" & Site !="Sao Jorge Castle" & Site !="Valencia (C)" & Site !="Valencia (I)")
+```
+
+**TABLES**
+
+Table 2: Summary of bone collagen isotope results by species
+```{r}
+Table2<-data.frame(
+  aggregate(Boned13C~Species,data=OSB,FUN=length),
+  aggregate(Boned13C~Species,data=OSB,FUN=mean),
+  aggregate(Boned13C~Species,data=OSB,FUN=sd),
+  aggregate(Boned13C~Species,data=OSB,FUN=IQR),
+  aggregate(Boned13C~Species,data=OSB,FUN=min),
+  aggregate(Boned13C~Species,data=OSB,FUN=max),
+  aggregate(Boned13C~Species,data=OSB,FUN=function(x){abs(min(x)-max(x))}),
+  aggregate(Boned15N~Species,data=OSB,FUN=mean),
+  aggregate(Boned15N~Species,data=OSB,FUN=sd),
+  aggregate(Boned15N~Species,data=OSB,FUN=IQR),
+  aggregate(Boned15N~Species,data=OSB,FUN=min),
+  aggregate(Boned15N~Species,data=OSB,FUN=max),
+  aggregate(Boned15N~Species,data=OSB,FUN=function(y){abs(min(y)-max(y))}))
+Table2 <- Table2[,c(1,2,4,6,8,10,12,14,16,18,20,22,24,26)]
+colnames(Table2) <- c("Species", "n", "d13Ccoll Mean", "Standard Deviation", "IQR", "Minimum", "Maximum", "Range", "IQR", "d15Ncoll Mean", "Standard Deviation", "Minimum", "Maximum", "Range")
+Table2
+write.csv(Table2, file="Table 2.csv", row.names = FALSE)
+```
+
+Table 4: Summary of Sr isotope results by species
+```{r}
+Table4<-data.frame(
+  aggregate(Strontium~Species,data=OSB,FUN=length),
+  aggregate(Strontium~Species,data=OSB,FUN=mean),
+  aggregate(Strontium~Species,data=OSB,FUN=sd),
+  aggregate(Strontium~Species,data=OSB,FUN=IQR),
+  aggregate(Strontium~Species,data=OSB,FUN=min),
+  aggregate(Strontium~Species,data=OSB,FUN=max),
+  aggregate(Strontium~Species,data=OSB,FUN=function(x){abs(min(x)-max(x))}))
+Table4 <- Table4[,c(1,2,4,6,8,10,12, 14)]
+colnames(Table4) <- c("Species", "n", "87/Sr86Sr", "Standard Deviation", "IQR", "Minimum", "Maximum", "Range")
+Table4
+write.csv(Table4, file="Table 4.csv", row.names = FALSE)
+```
+
+**FIGURES**
+
+Figure 2: Scatter plot of OSB bone collagen data
+```{r}
+cairo_ps("Figure 2.eps", family="DejaVu Sans", height=5, width=6)
+ggplot(OSB, aes(Boned13C, Boned15N)) + 
+  geom_point(aes(shape=Species, colour=Species, fill=Species, size=Species)) +
+  scale_shape_manual(values=c(21,0,2,5,4,8)) +
+  scale_color_manual(values=c("black","black","black","black", "black","black")) +
+  scale_fill_manual(values=c("grey","white","white","white","white","white")) +
+  scale_size_manual(values=c(3,3,3,3,3,3)) +
+  theme_classic() +
+  theme(legend.position = "bottom") +
+  theme(legend.title=element_blank()) + 
+  scale_x_continuous(name=expression(delta^13*C["bone"]*" "("\u2030")), limits = c(-22, -10), breaks=c(-22, -20, -18, -16, -14, -12, -10)) +
+  scale_y_continuous(name=expression(delta^15*N["bone"]*" "("\u2030")), limits = c(1, 17), breaks=c(2, 4, 6, 8, 10, 12, 14, 16))
+dev.off()
+```
+
+Figure 3: Scatter plot of OSB human dentine collagen and animal bone collagen data
+```{r}
+cairo_ps("Figure 3.eps", family="DejaVu Sans", height=5, width=6)
+ggplot(OSB, aes(Dentined13C, Dentined15N)) + 
+  geom_point(aes(shape=Species, colour=Species, fill=Species, size=Species)) +
+  scale_shape_manual(values=c(21,0,2,5,4,8)) +
+  scale_color_manual(values=c("black","black","black","black", "black","black")) +
+  scale_fill_manual(values=c("grey","white","white","white","white","white")) +
+  scale_size_manual(values=c(3,3,3,3,3,3)) +
+  theme_classic() +
+  theme(legend.position = "bottom") +
+  theme(legend.title=element_blank()) + 
+  scale_x_continuous(name=expression(delta^13*C["dentine/bone"]*" "("\u2030")), limits = c(-22, -10), breaks=c(-22, -20, -18, -16, -14, -12, -10)) +
+  scale_y_continuous(name=expression(delta^15*N["dentine/bone"]*" "("\u2030")), limits = c(1, 17), breaks=c(2, 4, 6, 8, 10, 12, 14, 16))
+dev.off()
+```
+
+Figure 4: Scatter plot of the difference between OSB human dentine and bone collagen isotope values
+```{r}
+cairo_ps("Figure 4.eps", family="DejaVu Sans", height=5, width=6)
+
+# constants
+axis_begin  <- -4
+axis_end    <- 4
+total_ticks <- 17
+
+# DATA ----
+# point to plot
+my_point <- data.frame(x=1,y=1)
+# chart junk data
+tick_frame <- 
+  data.frame(ticks = seq(axis_begin, axis_end, length.out = total_ticks), 
+             zero=-0.05) %>%
+  subset(ticks != 0)
+
+lab_frame <- data.frame(lab = seq(axis_begin, axis_end),
+                        zero = 0) %>%
+  subset(lab != 0)
+
+tick_sz <- (tail(lab_frame$lab, 1) -  lab_frame$lab[1]) / 150
+
+# PLOT ----
+ggplot(OSBHuman, aes(Changed13C, Changed15N)) +
+  
+  # CHART JUNK
+  # y axis line
+  geom_segment(x = 0, xend = 0, 
+               y = lab_frame$lab[1], yend = tail(lab_frame$lab, 1),
+               size = 0.35) +
+  # x axis line
+  geom_segment(y = 0, yend = 0, 
+               x = lab_frame$lab[1], xend = tail(lab_frame$lab, 1),
+               size = 0.35) +
+  # x ticks
+  geom_segment(data = tick_frame, 
+               aes(x = ticks, xend = ticks, 
+                   y = zero, yend = zero + tick_sz)) +
+  # y ticks
+  geom_segment(data = tick_frame, 
+               aes(x = zero, xend = zero + tick_sz, 
+                   y = ticks, yend = ticks)) + 
+  
+  # labels
+  geom_text(data=lab_frame, aes(x=lab, y=zero, label=lab),
+            family = 'Arial', vjust=1.5, size=3.5) +
+  geom_text(data=lab_frame, aes(x=zero, y=lab, label=lab),
+            family = 'Arial', hjust=2, size=3.5) +
+  
+  # THE DATA POINT
+  geom_point(shape=21, color="black", fill="grey", size=3) +
+  theme_classic() +
+  scale_x_continuous(name=expression(Delta^13*C["bone-dentine"]*" "("\u2030")), limits = c(-2, 2)) +
+  scale_y_continuous(name=expression(Delta^15*N["bone-dentine"]*" "("\u2030")), limits = c(-4, 2)) +
+  theme(axis.line.x = element_blank(),
+        axis.text.x=element_blank(),
+        axis.ticks.x=element_blank()) +
+  theme(axis.line.y = element_blank(),
+        axis.text.y=element_blank(),
+        axis.ticks.y=element_blank())
+dev.off()
+```
+
+Figure 5: Scatter of OSB human enamel carbonate data
+```{r}
+sp1<-
+  ggplot(OSBHuman, aes(Enameld18O, Enameld13C)) + 
+  geom_point(shape=21, color="black", fill="grey", size=3) +
+  theme_classic() +
+  scale_x_continuous(name=expression(delta^18*O["CO3"]*" "("\u2030")), limits = c(-7, -3)) +
+  scale_y_continuous(name=expression(delta^13*C["CO3"]*" "("\u2030")), limits = c(-18, -4))
+p1<-ggMarginal(sp1, type="histogram", size = 7, xparams = list(binwidth = 0.25))
+
+cairo_ps("Figure 5.eps", family="DejaVu Sans", height=5, width=6)
+ggarrange(p1, ncol=1, nrow=1)
+dev.off()
+```
+
+Figure 6: Scatter plot of human strontium and oxygen isotope values
+```{r}
+sp2<- 
+  ggplot(OSB, aes(Enameld18O, Strontium)) + 
+  geom_point(shape=21, color="black", fill="grey", size=3) +
+  theme_classic() +
+  theme(legend.position = "bottom") +
+  theme(legend.title=element_blank()) +
+  scale_x_continuous(name=expression(delta^18*O["CO3"]*" "("\u2030")), limits = c(-7, -3)) +
+  scale_y_continuous(name=expression(""^87*"Sr/"^86*Sr), limits = c(0.708, 0.712))
+p2<-ggMarginal(sp2, type="histogram",  xparams = list(binwidth = 0.25))
+               # size = 7, binwidth=0.25)
+
+cairo_ps("Figure 6.eps", family="DejaVu Sans", height=5, width=6)
+ggarrange(p2, ncol=1, nrow=1)
+dev.off()
+```
+
+**STATISTICS - identifying outliers in fauna bone collagen data**
+
+Boxplots (by species)
+```{r}
+ggplot(OSB, aes(x=Species, y=Boned13C)) + 
+  geom_boxplot() + 
+  theme_bw() +
+  theme(legend.position = "bottom") +
+  theme(legend.title=element_blank()) +
+  theme(axis.title.x = element_blank()) +
+  scale_y_continuous(name=expression(delta^13*C["coll"]*" "("\u2030")), breaks = c(-20, -18, -16, -14, -12)) +
+  theme(axis.text.x = element_text(angle=90))
+
+ggplot(OSB, aes(x=Species, y=Boned15N)) + 
+  geom_boxplot() + 
+  theme_bw() +
+  theme(legend.position = "bottom") +
+  theme(legend.title=element_blank()) +
+  theme(axis.title.x = element_blank()) +
+  scale_y_continuous(name=expression(delta^15*N["coll"]*" "("\u2030"))) +
+  theme(axis.text.x = element_text(angle=90))
+```
+
+Boxplots (domesticates)
+```{r}
+boxplot(OSBDom$Boned13C, ylab = expression(delta^13*C["coll"]*" "("\u2030")))
+boxplot(OSBDom$Boned15N, ylab = expression(delta^15*N["coll"]*" "("\u2030")))
+```
+
+MAD and MAD boundaries - sheep/goat, cow and pig (separately and combined)
+```{r}
+mad_SGC<-mad(OSBSG$Boned13C, center = median(OSBSG$Boned13C, na.rm=TRUE), constant = 1.4826, na.rm=TRUE, low = FALSE, high = FALSE)
+median(OSBSG$Boned13C, na.rm=TRUE)+2*(mad_SGC)
+median(OSBSG$Boned13C, na.rm=TRUE)-2*(mad_SGC)
+
+mad_SGN<-mad(OSBSG$Boned15N, center = median(OSBSG$Boned15N, na.rm=TRUE), constant = 1.4826, na.rm=TRUE, low = FALSE, high = FALSE)
+median(OSBSG$Boned15N, na.rm=TRUE)+2*(mad_SGN)
+median(OSBSG$Boned15N, na.rm=TRUE)-2*(mad_SGN)
+
+
+mad_CowC<-mad(OSBCow$Boned13C, center = median(OSBCow$Boned13C, na.rm=TRUE), constant = 1.4826, na.rm=TRUE, low = FALSE, high = FALSE)
+median(OSBCow$Boned13C, na.rm=TRUE)+2*(mad_CowC)
+median(OSBCow$Boned13C, na.rm=TRUE)-2*(mad_CowC)
+
+mad_CowN<-mad(OSBCow$Boned15N, center = median(OSBCow$Boned15N, na.rm=TRUE), constant = 1.4826, na.rm=TRUE, low = FALSE, high = FALSE)
+median(OSBCow$Boned15N, na.rm=TRUE)+2*(mad_CowN)
+median(OSBCow$Boned15N, na.rm=TRUE)-2*(mad_CowN)
+
+
+mad_PigC<-mad(OSBPig$Boned13C, center = median(OSBPig$Boned13C, na.rm=TRUE), constant = 1.4826, na.rm=TRUE, low = FALSE, high = FALSE)
+median(OSBPig$Boned13C, na.rm=TRUE)+2*(mad_PigC)
+median(OSBPig$Boned13C, na.rm=TRUE)-2*(mad_PigC)
+
+mad_PigN<-mad(OSBPig$Boned15N, center = median(OSBPig$Boned15N, na.rm=TRUE), constant = 1.4826, na.rm=TRUE, low = FALSE, high = FALSE)
+median(OSBPig$Boned15N, na.rm=TRUE)+2*(mad_PigN)
+median(OSBPig$Boned15N, na.rm=TRUE)-2*(mad_PigN)
+
+
+mad_DomC<-mad(OSBDom$Boned13C, center = median(OSBDom$Boned13C, na.rm=TRUE), constant = 1.4826, na.rm=TRUE, low = FALSE, high = FALSE)
+median(OSBDom$Boned13C, na.rm=TRUE)+2*(mad_DomC)
+median(OSBDom$Boned13C, na.rm=TRUE)-2*(mad_DomC)
+
+mad_DomN<-mad(OSBDom$Boned15N, center = median(OSBDom$Boned15N, na.rm=TRUE), constant = 1.4826, na.rm=TRUE, low = FALSE, high = FALSE)
+median(OSBDom$Boned15N, na.rm=TRUE)+2*(mad_DomN)
+median(OSBDom$Boned15N, na.rm=TRUE)-2*(mad_DomN)
+```
+
+Result: One outlying pig with high d15N (both methods, whether just pigs or all domesticates)
+Also one pig outlying with low d13C and d15N values (not identified in all relevant tests)
+
+**STATISTICS - identifying outliers in human dentine collagen data**
+
+Boxplots
+```{r}
+boxplot(OSBHuman$Dentined13C, ylab = expression(delta^13*C["coll"]*" "("\u2030")))
+boxplot(OSBHuman$Dentined15N, ylab = expression(delta^15*N["coll"]*" "("\u2030")))
+```
+
+MAD and MAD boundaries
+```{r}
+mad_HumanDentineC<-mad(OSBHuman$Dentined13C, center = median(OSBHuman$Dentined13C, na.rm=TRUE), constant = 1.4826, na.rm=TRUE, low = FALSE, high = FALSE)
+median(OSBHuman$Dentined13C, na.rm=TRUE)+2*(mad_HumanDentineC)
+median(OSBHuman$Dentined13C, na.rm=TRUE)-2*(mad_HumanDentineC)
+
+mad_HumanDentineN<-mad(OSBHuman$Dentined15N, center = median(OSBHuman$Dentined15N, na.rm=TRUE), constant = 1.4826, na.rm=TRUE, low = FALSE, high = FALSE)
+median(OSBHuman$Dentined15N, na.rm=TRUE) + 2*(mad_HumanDentineN)
+median(OSBHuman$Dentined15N, na.rm=TRUE)-2*(mad_HumanDentineN)
+```
+
+**STATISTICS - identifying outliers in human bone collagen data**
+
+Boxplots
+```{r}
+boxplot(OSBHuman$Boned13C, ylab = expression(delta^13*C["coll"]*" "("\u2030")))
+boxplot(OSBHuman$Boned15N, ylab = expression(delta^15*N["coll"]*" "("\u2030")))
+```
+
+MAD and MAD boundaries - humans
+```{r}
+mad_HumanBoneC<-mad(OSBHuman$Boned13C, center = median(OSBHuman$Boned13C, na.rm=TRUE), constant = 1.4826, na.rm=TRUE, low = FALSE, high = FALSE)
+median(OSBHuman$Boned13C, na.rm=TRUE)+2*(mad_HumanBoneC)
+median(OSBHuman$Boned13C, na.rm=TRUE)-2*(mad_HumanBoneC)
+
+mad_HumanBoneN<-mad(OSBHuman$Boned15N, center = median(OSBHuman$Boned15N, na.rm=TRUE), constant = 1.4826, na.rm=TRUE, low = FALSE, high = FALSE)
+median(OSBHuman$Boned15N, na.rm=TRUE) + 2*(mad_HumanBoneN)
+median(OSBHuman$Boned15N, na.rm=TRUE)-2*(mad_HumanBoneN)
+```
+
+**STATISTICS - identifying outliers in human enamel carbonate data**
+
+Boxplots
+```{r}
+boxplot(OSBHuman$Enameld18O, ylab = expression(delta^18*O["coll"]*" "("\u2030")))
+boxplot(OSBHuman$Enameld13C, ylab = expression(delta^13*C["coll"]*" "("\u2030")))
+```
+
+MAD and MAD boundaries 
+```{r}
+mad_HumanEnamelO<-mad(OSBHuman$Enameld18O, center = median(OSBHuman$Enameld18O, na.rm=TRUE), constant = 1.4826, na.rm=TRUE, low = FALSE, high = FALSE)
+median(OSBHuman$Enameld18O, na.rm=TRUE)+2*(mad_HumanEnamelO)
+median(OSBHuman$Enameld18O, na.rm=TRUE)-2*(mad_HumanEnamelO)
+
+mad_HumanEnamelC<-mad(OSBHuman$Enameld13C, center = median(OSBHuman$Enameld13C, na.rm=TRUE), constant = 1.4826, na.rm=TRUE, low = FALSE, high = FALSE)
+median(OSBHuman$Enameld13C, na.rm=TRUE) + 2*(mad_HumanEnamelC)
+median(OSBHuman$Enameld13C, na.rm=TRUE)-2*(mad_HumanEnamelC)
+```
+
+**STATISTICS - Strontium data**
+
+Exploring animal strontium data 
+```{r}
+boxplot(OSBDom$Strontium, ylab = "87/86Sr")
+hist(OSBDom$Strontium, ylab = "87/86Sr")
+```
+
+Establishing mean +/- 2*sd 'local range'
+```{r}
+mean(OSBDom$Strontium, na.rm=TRUE)-2*(sd(OSBDom$Strontium, na.rm=TRUE))
+mean(OSBDom$Strontium, na.rm=TRUE)+2*(sd(OSBDom$Strontium, na.rm=TRUE))
+```
+
+Establishing median +/- 2*MAD 'local range'
+```{r}
+mad_DomSr<-mad(OSBDom$Strontium, center = median(OSBDom$Strontium, na.rm=TRUE), constant = 1.4826, na.rm=TRUE, low = FALSE, high = FALSE)
+median(OSBDom$Strontium, na.rm=TRUE)-2*(mad_DomSr)
+median(OSBDom$Strontium, na.rm=TRUE)+2*(mad_DomSr)
+```
+
+Identifying outliers in human Sr data
+```{r}
+boxplot(OSBHuman$Strontium, ylab = "87/86Sr")
+
+mad_HumanSr<-mad(OSBHuman$Strontium, center = median(OSBHuman$Strontium, na.rm=TRUE), constant = 1.4826, na.rm=TRUE, low = FALSE, high = FALSE)
+median(OSBHuman$Strontium, na.rm=TRUE)+2*(mad_HumanSr)
+median(OSBHuman$Strontium, na.rm=TRUE)-2*(mad_HumanSr)
+```
+
+Exploring human (and animal) Sr data
+```{r}
+hist(OSBHuman$Strontium, ylab = "87/86Sr")
+hist(OSB$Strontium, ylab = "87/86Sr")
+```
+
+**COMPARISON WITH PUBLISHED DATASETS**
+
+Figure 7: Scatter plots of bone collagen carbon and nitrogen isotope data from Iberian sites
+```{r}
+cairo_ps("Figure 7.eps", family="DejaVu Sans", height=5, width=6)
+ggplot(Iberia, aes(Boned13C, Boned15N)) + 
+  geom_point(aes(shape=Site, colour=Site, fill=Site, size=Site)) +
+  scale_shape_manual(values=c(21,22,22,23,24, 21, 11, 25, 24, 12)) +
+  scale_color_manual(values=c("black","black","black","black", "black","black", "black","black", "black", "black")) +
+  scale_fill_manual(values=c("grey","white","grey","grey","grey","black", "white", "grey", "white", "grey")) +
+  scale_size_manual(values=c(3,3,3,3,3,3, 3, 3, 3,3)) +
+  theme_classic() +
+  theme(legend.position = "bottom") +
+  theme(legend.title=element_blank()) + 
+  scale_x_continuous(name=expression(delta^13*C["bone"]*" "("\u2030")), limits = c(-21, -11), breaks=c(-22, -20, -18, -16, -14, -12, -10)) +
+  scale_y_continuous(name=expression(delta^15*N["bone"]*" "("\u2030")), limits = c(7, 18), breaks=c(2, 4, 6, 8, 10, 12, 14, 16))
+dev.off()
+```
+
+Table 5: Comparison of isotope data from Iberian sites
+```{r}
+Table5<-data.frame(
+  aggregate(Boned13C~Site,data=Iberia,FUN=length),
+  aggregate(Boned13C~Site,data=Iberia,FUN=mean),
+  aggregate(Boned13C~Site,data=Iberia,FUN=sd),
+  aggregate(Boned13C~Site,data=Iberia,FUN=IQR),
+  aggregate(Boned13C~Site,data=Iberia,FUN=min),
+  aggregate(Boned13C~Site,data=Iberia,FUN=max),
+  aggregate(Boned13C~Site,data=Iberia,FUN=function(x){abs(min(x)-max(x))}),
+  aggregate(Boned15N~Site,data=Iberia,FUN=mean),
+  aggregate(Boned15N~Site,data=Iberia,FUN=sd),
+  aggregate(Boned15N~Site,data=Iberia,FUN=IQR),
+  aggregate(Boned15N~Site,data=Iberia,FUN=min),
+  aggregate(Boned15N~Site,data=Iberia,FUN=max),
+  aggregate(Boned15N~Site,data=Iberia,FUN=function(y){abs(min(y)-max(y))}))
+Table5 <- Table5[,c(1,2,4,6,8,10,12,14,16,18,20,22,24,26)]
+colnames(Table5) <- c("Site", "n", "d13Ccoll Mean", "Standard Deviation", "IQR", "Minimum", "Maximum", "Range","d15Ncoll Mean", "Standard Deviation", "IQR", "Minimum", "Maximum", "Range")
+Table5
+write.csv(Table5, file="Table 5.csv", row.names = FALSE)
+```
+
+Table 6: Comparison of range of isotope values at naval sites
+```{r}
+Table6<-data.frame(
+  aggregate(Boned13C~Site,data=naval,FUN=length),
+  aggregate(Boned13C~Site,data=naval,FUN=function(y){abs(min(y)-max(y))}),
+  aggregate(Boned13C~Site,data=naval,FUN=sd),
+  aggregate(Boned13C~Site,data=naval,FUN=IQR),
+  aggregate(Boned15N~Site,data=naval,FUN=function(y){abs(min(y)-max(y))}),
+  aggregate(Boned15N~Site,data=naval,FUN=sd),
+  aggregate(Boned15N~Site,data=naval,FUN=IQR))
+Table6 <- Table6[,c(1,2,4, 6, 8,10,12,14)]
+colnames(Table6) <- c("Site", "n", "d13C Range","d13C St dev", "d13C IQR", "d15N Range", "d15N St dev", "d15N IQR")
+Table6
+write.csv(Table6, file="Table 6.csv", row.names = FALSE)
+```

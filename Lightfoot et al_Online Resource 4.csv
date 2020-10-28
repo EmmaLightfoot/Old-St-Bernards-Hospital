@@ -1,0 +1,381 @@
+SampleCode,Site,Species,Sex,Age,Boned13C,Boned15N,Dentined13C,Dentined15N,Changed13C,Changed15N,Enameld18O,Enameld13C,Strontium,Reference
+GH64,Old St Bernard's,Human,?M,Adult,-19.36,12.31,-18.8,12.3,-0.56,0.01,-5.63,-14.46,,This study
+GH84,Old St Bernard's,Human,?M,Adult (mature),-19.31,8.99,-19.07,9.6,-0.24,-0.61,-5.04,-12.68,,This study
+GH85,Old St Bernard's,Human,?M,Adult (young),-18.24,10.6,,,,,-3.16,-12.21,,This study
+GH103,Old St Bernard's,Human,?,Adult (young),-18.82,9.91,-18.34,10.54,-0.48,-0.63,-4.04,-11.3,,This study
+GH104,Old St Bernard's,Human,?M,Adolescent,,,,,,,-4.43,-12.24,0.709071,This study
+GH117,Old St Bernard's,Human,M,Adult (young),-17.87,11.41,-18.32,9.94,0.45,1.47,-5.46,-12.09,0.708429,This study
+GH124,Old St Bernard's,Human,?M,Adult (young),-18.55,9.88,-17.96,10.21,-0.59,-0.33,-5.34,-11.72,,This study
+GH129,Old St Bernard's,Human,?F,Adult,-18.43,9.68,-17.55,13.39,-0.88,-3.71,-4.6,-11.84,0.709417,This study
+GH130,Old St Bernard's,Human,?M,Adult (mid),-17.47,10.92,-17.41,11.53,-0.06,-0.61,-3.49,-11.1,0.70915,This study
+GH133,Old St Bernard's,Human,?,Adolescent,-18.71,9.88,-18.58,10.54,-0.13,-0.66,-6.05,-11.93,,This study
+GH142A,Old St Bernard's,Human,?,Adult,,,-18.37,11.18,,,-6.4,-12.31,0.709151,This study
+GH148,Old St Bernard's,Human,?M,Adolescent,,,-18.46,9.74,,,-4.09,-11.75,0.710402,This study
+GH166,Old St Bernard's,Human,?M,Adult (young),-18.48,8.85,-18.22,9.1,-0.26,-0.25,-5.91,-12.38,,This study
+GH171,Old St Bernard's,Human,?M,Adult (young),-18.66,9.39,,,,,-4.09,-12.5,0.710961,This study
+GH181,Old St Bernard's,Human,?M,Adult (young),-19.01,10.46,-18.64,11.52,-0.37,-1.06,-5.69,-12.76,,This study
+GH183,Old St Bernard's,Human,?M,Adult (young),-17.75,10.65,-17.44,11.31,-0.31,-0.66,-4.84,-11.54,0.710653,This study
+GH191,Old St Bernard's,Human,M,Adult (young),-18.43,10.51,-18.33,10.57,-0.1,-0.06,-5.07,-12.02,0.708695,This study
+GH192,Old St Bernard's,Human,?,Adult (young),-18.36,12.78,-17.94,13.64,-0.42,-0.86,-5.12,-11.62,,This study
+GH193,Old St Bernard's,Human,?,Adult (mid),-16.28,15.01,-15.79,16.62,-0.49,-1.61,-4.88,-10.86,0.709443,This study
+GH198,Old St Bernard's,Human,?,Adult,-18.77,8.6,-18.57,9.06,-0.2,-0.46,-5.02,-11.88,,This study
+GH210,Old St Bernard's,Human,F,Adult (mid),-18.45,10.49,-18.18,10.73,-0.27,-0.24,-4.96,-11.94,0.709236,This study
+GH225,Old St Bernard's,Human,?M,Adult (mid),-18.28,11.97,-18.53,11.77,0.25,0.2,-4.77,-11.46,0.7092,This study
+GH230,Old St Bernard's,Human,?M,Adult (mid),-17.63,10.65,-17.32,11.31,-0.31,-0.66,-4.51,-11.72,,This study
+GH231,Old St Bernard's,Human,?M,Adult (mid),-18.36,10.09,-18.4,10.41,0.04,-0.32,-3.79,-12.04,,This study
+GH232,Old St Bernard's,Human,?M,Adult (young),-19.03,9.14,-18.33,9.65,-0.7,-0.51,-3.51,-12.8,,This study
+GH233,Old St Bernard's,Human,M,Adult (young),-18.07,11.13,-18.76,9.47,0.69,1.66,-6.17,-12.83,0.708896,This study
+GH235,Old St Bernard's,Human,?,Adult,-17.09,14.46,-17.48,12.93,0.39,1.53,-4.03,-12.51,0.708982,This study
+GH239,Old St Bernard's,Human,?M,Adult (young),-18.87,10.65,-18.76,11.1,-0.11,-0.45,-4.22,-12.18,,This study
+GH242,Old St Bernard's,Human,M,Adult (young),-18.6,9.35,-18.01,10.45,-0.59,-1.1,-5.46,-12.09,,This study
+GH243,Old St Bernard's,Human,?M,Adult (young),-17.62,12.18,-17.64,11.6,0.02,0.58,-4.8,-11.94,0.710258,This study
+GH246,Old St Bernard's,Human,?M,Adult (young),-19.71,12.94,-19.54,13.71,-0.17,-0.77,-6.34,-14.49,0.711912,This study
+GH251,Old St Bernard's,Human,M,Adult (mid),-18.6,13.75,-18.47,13.9,-0.13,-0.15,-5.32,-12.33,,This study
+GH252,Old St Bernard's,Human,M,Adult (young),-19.84,11.15,-20.2,10.77,0.36,0.38,-5.33,-16.15,0.710334,This study
+GHF01=GHFSr09,Old St Bernard's,Pig,,,-20.25,4.93,-20.25,4.93,,,,,0.709426,This study
+GHF02,Old St Bernard's,Pig,,,-19.05,9.88,-19.05,9.88,,,,,,This study
+GHF03,Old St Bernard's,Pig,,,-20.98,3.88,-20.98,3.88,,,,,,This study
+GHF04,Old St Bernard's,Pig,,,-19.86,5.73,-19.86,5.73,,,,,,This study
+GHF05=GHFSr02,Old St Bernard's,Pig,,,-20.65,5.41,-20.65,5.41,,,,,0.709423,This study
+GHF06,Old St Bernard's,Bird,,,-18.78,10.21,-18.78,10.21,,,,,,This study
+GHF07,Old St Bernard's,Bird,,,-14.82,7.72,-14.82,7.72,,,,,,This study
+GHF08,Old St Bernard's,Sheep/goat,,,-20.99,5.73,-20.99,5.73,,,,,,This study
+GHF09,Old St Bernard's,Sheep/goat,,,-19.97,3.51,-19.97,3.51,,,,,,This study
+GHF10,Old St Bernard's,Sheep/goat,,,-21.25,4.54,-21.25,4.54,,,,,,This study
+GHF11,Old St Bernard's,Sheep/goat,,,-20.04,4.79,-20.04,4.79,,,,,,This study
+GHF12,Old St Bernard's,Sheep/goat,,,-19.79,3.51,-19.79,3.51,,,,,,This study
+GHF13=GHFSr08,Old St Bernard's,Sheep/goat,,,-20.52,6.96,-20.52,6.96,,,,,0.708772,This study
+GHF14,Old St Bernard's,Cattle,,,-20.48,6.56,-20.48,6.56,,,,,,This study
+GHF15,Old St Bernard's,Cattle,,,-19.68,8.32,-19.68,8.32,,,,,,This study
+GHF16,Old St Bernard's,Cattle,,,-20.02,6.71,-20.02,6.71,,,,,,This study
+GHF17,Old St Bernard's,Cattle ,,,-20.44,7.55,-20.44,7.55,,,,,,This study
+GHF18,Old St Bernard's,Cattle,,,-19.71,6.15,-19.71,6.15,,,,,,This study
+GHF19,Old St Bernard's,Cattle,,,-20.22,5.37,-20.22,5.37,,,,,,This study
+GHF20,Old St Bernard's,Fish,,,-10.7,14.45,-10.7,14.45,,,,,,This study
+GHF21,Old St Bernard's,Fish,,,-12.79,10.32,-12.79,10.32,,,,,,This study
+GHF22,Old St Bernard's,Fish,,,-12.21,11.91,-12.21,11.91,,,,,,This study
+GHFSr01,Old St Bernard's,Sheep/goat,,,,,,,,,,,0.709828,This study
+GHFSr03,Old St Bernard's,Cattle,,,,,,,,,,,0.709126,This study
+GHFSr04,Old St Bernard's,Sheep/goat,,,,,,,,,,,0.708881,This study
+GHFSr05,Old St Bernard's,Cattle,,,,,,,,,,,0.710001,This study
+GHFSr06,Old St Bernard's,Sheep/goat,,,,,,,,,,,0.710245,This study
+EC01,Ecija,Human,F,,-18.89,9.67,-18.78,11.3,,,-6.1,-12.03,,This study
+EC02,Ecija,Human,M,,,,-18.97,11.26,,,-5.72,-11.9,,This study
+EC03,Ecija,Human,M,,,,-18.97,9.16,,,-6.62,-12.07,,This study
+EC04,Ecija,Human,F,,,,-18.58,10.47,,,-5.66,-11.45,,This study
+EC05,Ecija,Human,?,,,,-19.37,10.13,,,-5.76,-12.06,,This study
+EC06,Ecija,Human,M,,-18.91,10.01,-18.7,11.46,,,-6.3,-11.91,,This study
+EC07,Ecija,Human,M,,-18.62,9.2,,,,,,,,This study
+EC08,Ecija,Human,F,,-19.11,9.74,-18.76,10.7,,,-5.79,-12.11,,This study
+EC09,Ecija,Human,F,,,,-18.55,10.34,,,-6.56,-11.49,,This study
+EC10,Ecija,Human,M,,-19.11,9.88,-18.56,10.68,,,-5.65,-12.14,,This study
+EC11,Ecija,Human,F,,-18.44,9.94,-18.57,10.28,,,-3.94,-11.65,,This study
+EC12,Ecija,Human,M,,-19.03,9.85,-19.2,9.24,,,-5.46,-11.98,,This study
+EC13,Ecija,Human,M,,,,-18.29,11.35,,,-4.06,-11.72,,This study
+EC14,Ecija,Human,M,,,,-18.89,9.54,,,-5.66,-12.13,,This study
+EC15,Ecija,Human,M,,,,,,,,-4.83,-11.56,,This study
+EC16,Ecija,Human,M,,-18.64,8.49,-18.58,9.17,,,-6.7,-12.48,,This study
+EC17,Ecija,Human,F,,-18.95,10.64,-18.74,11.93,,,-5.68,-12.84,,This study
+EC18,Ecija,Human,M,,-18.9,9.52,-18.87,10.76,,,-6.27,-11.98,,This study
+EC19,Ecija,Human,F,,,,-17.74,11.68,,,-6.56,-13.17,,This study
+EC20,Ecija,Human,?,,,,-18.25,10.28,,,-5.66,-11.96,,This study
+Pedro,Royal Family,Human,,,-18.4,12.9,,,,,,,,Jime_nez-Brobeil et al 2016
+Maria,Royal Family,Human,,,-18.5,13.8,,,,,,,,Jime_nez-Brobeil et al 2016
+Alfonso,Royal Family,Human,,,-18,15.6,,,,,,,,Jime_nez-Brobeil et al 2016
+Juan,Royal Family,Human,,,-19.3,11.9,,,,,,,,Jime_nez-Brobeil et al 2016
+Fadrique,Royal Family,Human,,,-18.6,12.1,,,,,,,,Jime_nez-Brobeil et al 2016
+T-30,La Torrecila,Human,,,-17.7,11.7,,,,,,,,Jime_nez-Brobeil et al 2016
+T-111,La Torrecila,Human,,,-11.9,10.3,,,,,,,,Jime_nez-Brobeil et al 2016
+T-118,La Torrecila,Human,,,-14.2,9.4,,,,,,,,Jime_nez-Brobeil et al 2016
+T-152,La Torrecila,Human,,,-13.6,9.7,,,,,,,,Jime_nez-Brobeil et al 2016
+T-158,La Torrecila,Human,,,-14.8,9.8,,,,,,,,Jime_nez-Brobeil et al 2016
+481,Colegiata,Human,,,-15.7,10.9,,,,,,,,Alexander et al 2015
+303,Colegiata,Human,,,-15.5,9.7,,,,,,,,Alexander et al 2015
+305,Colegiata,Human,,,-15,12,,,,,,,,Alexander et al 2015
+324,Colegiata,Human,,,-16,9.8,,,,,,,,Alexander et al 2015
+346,Colegiata,Human,,,-18.1,10.4,,,,,,,,Alexander et al 2015
+357,Colegiata,Human,,,-16.8,9.4,,,,,,,,Alexander et al 2015
+369,Colegiata,Human,,,-17.2,10,,,,,,,,Alexander et al 2015
+377,Colegiata,Human,,,-18.7,9.9,,,,,,,,Alexander et al 2015
+398,Colegiata,Human,,,-17.5,10.4,,,,,,,,Alexander et al 2015
+401,Colegiata,Human,,,-17.6,10.3,,,,,,,,Alexander et al 2015
+445,Colegiata,Human,,,-18.6,9.7,,,,,,,,Alexander et al 2015
+455,Colegiata,Human,,,-16.4,10.1,,,,,,,,Alexander et al 2015
+457,Colegiata,Human,,,-18.7,8.8,,,,,,,,Alexander et al 2015
+463,Colegiata,Human,,,-17.3,9.6,,,,,,,,Alexander et al 2015
+483,Colegiata,Human,,,-17.4,11.1,,,,,,,,Alexander et al 2015
+501,Colegiata,Human,,,-16.9,9.9,,,,,,,,Alexander et al 2015
+504,Colegiata,Human,,,-16.9,9.2,,,,,,,,Alexander et al 2015
+506,Colegiata,Human,,,-18,10.5,,,,,,,,Alexander et al 2015
+531,Colegiata,Human,,,-18.1,9.7,,,,,,,,Alexander et al 2015
+543,Colegiata,Human,,,-17,10.8,,,,,,,,Alexander et al 2015
+547,Colegiata,Human,,,-18.5,10.1,,,,,,,,Alexander et al 2015
+549,Colegiata,Human,,,-16.9,10.5,,,,,,,,Alexander et al 2015
+550,Colegiata,Human,,,-17.2,11.7,,,,,,,,Alexander et al 2015
+571,Colegiata,Human,,,-17.8,11.4,,,,,,,,Alexander et al 2015
+804,Benipeixcar,Human,,,-17.2,10,,,,,,,,Alexander et al 2015
+1504,Benipeixcar,Human,,,-16.8,11,,,,,,,,Alexander et al 2015
+1603,Benipeixcar,Human,,,-14.7,11.2,,,,,,,,Alexander et al 2015
+1904,Benipeixcar,Human,,,-15.9,9.2,,,,,,,,Alexander et al 2015
+2003,Benipeixcar,Human,,,-18,10.6,,,,,,,,Alexander et al 2015
+2304,Benipeixcar,Human,,,-16.3,11.1,,,,,,,,Alexander et al 2015
+2404,Benipeixcar,Human,,,-16.4,11,,,,,,,,Alexander et al 2015
+2602,Benipeixcar,Human,,,-16.5,10.8,,,,,,,,Alexander et al 2015
+2703,Benipeixcar,Human,,,-16.8,11,,,,,,,,Alexander et al 2015
+2803,Benipeixcar,Human,,,-15.6,10.7,,,,,,,,Alexander et al 2015
+2902,Benipeixcar,Human,,,-17.2,10.7,,,,,,,,Alexander et al 2015
+9203,Benipeixcar,Human,,,-16.8,10,,,,,,,,Alexander et al 2015
+9303,Benipeixcar,Human,,,-16.5,10.7,,,,,,,,Alexander et al 2015
+9503,Benipeixcar,Human,,,-17.1,10.4,,,,,,,,Alexander et al 2015
+9902,Benipeixcar,Human,,,-16,11.3,,,,,,,,Alexander et al 2015
+14403,Benipeixcar,Human,,,-17.5,10.9,,,,,,,,Alexander et al 2015
+14603,Benipeixcar,Human,,,-16.9,10.6,,,,,,,,Alexander et al 2015
+14703,Benipeixcar,Human,,,-15.2,10.1,,,,,,,,Alexander et al 2015
+15103,Benipeixcar,Human,,,-14.2,11.9,,,,,,,,Alexander et al 2015
+15403,Benipeixcar,Human,,,-15.6,10.3,,,,,,,,Alexander et al 2015
+25865,El Raval,Human,,,-15,12.1,,,,,,,,Salazar-Garci_a et al 2014
+25870,El Raval,Human,,,-17.3,12.2,,,,,,,,Salazar-Garci_a et al 2014
+25872,El Raval,Human,,,-16.6,12.3,,,,,,,,Salazar-Garci_a et al 2014
+25874,El Raval,Human,,,-15.4,11.7,,,,,,,,Salazar-Garci_a et al 2014
+25876,El Raval,Human,,,-16.3,12.2,,,,,,,,Salazar-Garci_a et al 2014
+25880,El Raval,Human,,,-15.9,12.3,,,,,,,,Salazar-Garci_a et al 2014
+25883,El Raval,Human,,,-16.4,12.8,,,,,,,,Salazar-Garci_a et al 2014
+25890,El Raval,Human,,,-16.2,12.1,,,,,,,,Salazar-Garci_a et al 2014
+25892,El Raval,Human,,,-16.7,11.7,,,,,,,,Salazar-Garci_a et al 2014
+25896,El Raval,Human,,,-16.9,11.8,,,,,,,,Salazar-Garci_a et al 2014
+25900,El Raval,Human,,,-16.2,11.9,,,,,,,,Salazar-Garci_a et al 2014
+25904,El Raval,Human,,,-16,12.1,,,,,,,,Salazar-Garci_a et al 2014
+25906,El Raval,Human,,,-15.1,11.8,,,,,,,,Salazar-Garci_a et al 2014
+25908,El Raval,Human,,,-15,12.2,,,,,,,,Salazar-Garci_a et al 2014
+25910,El Raval,Human,,,-16.6,11.7,,,,,,,,Salazar-Garci_a et al 2014
+25912,El Raval,Human,,,-16.7,12.6,,,,,,,,Salazar-Garci_a et al 2014
+25914,El Raval,Human,,,-15.9,12.2,,,,,,,,Salazar-Garci_a et al 2014
+25922,El Raval,Human,,,-16.8,12.4,,,,,,,,Salazar-Garci_a et al 2014
+25924,El Raval,Human,,,-16.3,12.3,,,,,,,,Salazar-Garci_a et al 2014
+25928,El Raval,Human,,,-16.1,12.1,,,,,,,,Salazar-Garci_a et al 2014
+25930,El Raval,Human,,,-16.6,12,,,,,,,,Salazar-Garci_a et al 2014
+26341,El Raval,Human,,,-16.3,11.9,,,,,,,,Salazar-Garci_a et al 2014
+26344,El Raval,Human,,,-16.6,12.6,,,,,,,,Salazar-Garci_a et al 2014
+26351,El Raval,Human,,,-16,12.1,,,,,,,,Salazar-Garci_a et al 2014
+26356,El Raval,Human,,,-17.5,11.4,,,,,,,,Salazar-Garci_a et al 2014
+26367,El Raval,Human,,,-16.6,11.8,,,,,,,,Salazar-Garci_a et al 2014
+26368,El Raval,Human,,,-16.8,12.1,,,,,,,,Salazar-Garci_a et al 2014
+26369,El Raval,Human,,,-17.1,12,,,,,,,,Salazar-Garci_a et al 2014
+26370,El Raval,Human,,,-16.3,12.3,,,,,,,,Salazar-Garci_a et al 2014
+26371,El Raval,Human,,,-16.2,13,,,,,,,,Salazar-Garci_a et al 2014
+26372,El Raval,Human,,,-17.1,11.9,,,,,,,,Salazar-Garci_a et al 2014
+26373,El Raval,Human,,,-17.4,12.5,,,,,,,,Salazar-Garci_a et al 2014
+26375,El Raval,Human,,,-16.6,12.1,,,,,,,,Salazar-Garci_a et al 2014
+26377,El Raval,Human,,,-16.7,12,,,,,,,,Salazar-Garci_a et al 2014
+26380,El Raval,Human,,,-16.2,12,,,,,,,,Salazar-Garci_a et al 2014
+532,Ecija,Human,,,-19.6,11.6,,,,,,,,Inskip et al 2018
+3801,Ecija,Human,,,-19.3,9.4,,,,,,,,Inskip et al 2018
+*5230,Ecija,Human,,,-19.1,9.7,,,,,,,,Inskip et al 2018
+5920,Ecija,Human,,,-18.7,9.2,,,,,,,,Inskip et al 2018
+6795,Ecija,Human,,,-19.3,9.7,,,,,,,,Inskip et al 2018
+6801,Ecija,Human,,,-19.2,9.3,,,,,,,,Inskip et al 2018
+7578,Ecija,Human,,,-19.2,11.9,,,,,,,,Inskip et al 2018
+7968,Ecija,Human,,,-18.1,11.6,,,,,,,,Inskip et al 2018
+9027,Ecija,Human,,,-19,10.1,,,,,,,,Inskip et al 2018
+10021,Ecija,Human,,,-19.4,9.8,,,,,,,,Inskip et al 2018
+10027,Ecija,Human,,,-19.2,8.4,,,,,,,,Inskip et al 2018
+12271,Ecija,Human,,,-18.7,10.5,,,,,,,,Inskip et al 2018
+12601,Ecija,Human,,,-19.3,9.7,,,,,,,,Inskip et al 2018
+5093,Ecija,Human,,,-18.9,11.4,,,,,,,,Inskip et al 2018
+11681,Ecija,Human,,,-19.2,9.9,,,,,,,,Inskip et al 2018
+11752,Ecija,Human,,,-19.1,9.6,,,,,,,,Inskip et al 2018
+2817,Ecija,Human,,,-18.9,9.4,,,,,,,,Inskip et al 2018
+3697,Ecija,Human,,,-18.6,10.8,,,,,,,,Inskip et al 2018
+6810,Ecija,Human,,,-19.1,11.1,,,,,,,,Inskip et al 2018
+*6825,Ecija,Human,,,-19.4,8.9,,,,,,,,Inskip et al 2018
+10326,Ecija,Human,,,-19.1,8,,,,,,,,Inskip et al 2018
+*11309,Ecija,Human,,,-18.9,10.1,,,,,,,,Inskip et al 2018
+11873,Ecija,Human,,,-19.3,9.3,,,,,,,,Inskip et al 2018
+12872,Ecija,Human,,,-19.4,11.2,,,,,,,,Inskip et al 2018
+492,Ecija,Human,,,-19.7,9.4,,,,,,,,Inskip et al 2018
+5902,Ecija,Human,,,-18.7,11.6,,,,,,,,Inskip et al 2018
+10957,Ecija,Human,,,-18.8,9.5,,,,,,,,Inskip et al 2018
+11333,Ecija,Human,,,-19.1,11.8,,,,,,,,Inskip et al 2018
+12286,Ecija,Human,,,-19.3,9.9,,,,,,,,Inskip et al 2018
+12895,Ecija,Human,,,-19.3,9.6,,,,,,,,Inskip et al 2018
+509,Ecija,Human,,,-19.2,9.5,,,,,,,,Inskip et al 2018
+*3094,Ecija,Human,,,-18.7,9.8,,,,,,,,Inskip et al 2018
+3863,Ecija,Human,,,-18.8,8.7,,,,,,,,Inskip et al 2018
+6855,Ecija,Human,,,-19.1,8.4,,,,,,,,Inskip et al 2018
+9247,Ecija,Human,,,-18.6,10.6,,,,,,,,Inskip et al 2018
+*11461,Ecija,Human,,,-19.1,9.9,,,,,,,,Inskip et al 2018
+*11550,Ecija,Human,,,-19.2,10.1,,,,,,,,Inskip et al 2018
+12677,Ecija,Human,,,-19.3,10.3,,,,,,,,Inskip et al 2018
+EC01,Ecija,Human,,,-18.89,9.67,,,,,,,,Inskip et al 2018
+EC06,Ecija,Human,,,-18.91,10.01,,,,,,,,Inskip et al 2018
+EC07,Ecija,Human,,,-18.62,9.2,,,,,,,,Inskip et al 2018
+EC08,Ecija,Human,,,-19.11,9.74,,,,,,,,Inskip et al 2018
+EC10,Ecija,Human,,,-19.11,9.88,,,,,,,,Inskip et al 2018
+EC11,Ecija,Human,,,-18.44,9.94,,,,,,,,Inskip et al 2018
+EC12,Ecija,Human,,,-19.03,9.85,,,,,,,,Inskip et al 2018
+EC16,Ecija,Human,,,-18.64,8.49,,,,,,,,Inskip et al 2018
+EC17,Ecija,Human,,,-18.95,10.64,,,,,,,,Inskip et al 2018
+EC18,Ecija,Human,,,-18.9,9.52,,,,,,,,Inskip et al 2018
+"Pra�a Nova, 1",Sao Jorge Castle,Human,,,18.8,11.2,,,,,,,,Toso et al 2019
+"Pra�a Nova, 2",Sao Jorge Castle,Human,,,18.7,9.4,,,,,,,,Toso et al 2019
+"Pal‡cio das Cozinhas, 1",Sao Jorge Castle,Human,,,18.7,11.2,,,,,,,,Toso et al 2019
+"Pal‡cio das Cozinhas, 2",Sao Jorge Castle,Human,,,18.8,9.9,,,,,,,,Toso et al 2019
+"Pal‡cio das Cozinhas, 7",Sao Jorge Castle,Human,,,19.1,9.2,,,,,,,,Toso et al 2019
+"Pal‡cio das Cozinhas, 8",Sao Jorge Castle,Human,,,19.4,10,,,,,,,,Toso et al 2019
+"Pal‡cio das Cozinhas, 12",Sao Jorge Castle,Human,,,18.9,9.9,,,,,,,,Toso et al 2019
+"Pal‡cio das Cozinhas, 14",Sao Jorge Castle,Human,,,18.5,9.6,,,,,,,,Toso et al 2019
+"Pal‡cio das Cozinhas, 16",Sao Jorge Castle,Human,,,18.9,9.4,,,,,,,,Toso et al 2019
+"Almonia 1, 1281",Valencia (I),Human,,,-18.1,10.7,,,,,,,,Alexander et al 2019
+"Almonia 1, 1356",Valencia (I),Human,,,-16.3,16.6,,,,,,,,Alexander et al 2019
+"Almonia 1, 1428",Valencia (I),Human,,,-17.8,11.6,,,,,,,,Alexander et al 2019
+"Almonia 1, 1363",Valencia (I),Human,,,-17,13.8,,,,,,,,Alexander et al 2019
+"Almonia 1, 1295",Valencia (I),Human,,,-18.9,11.4,,,,,,,,Alexander et al 2019
+"Almonia 1, 1344",Valencia (I),Human,,,-17.3,14.2,,,,,,,,Alexander et al 2019
+"Almonia 1, 1095",Valencia (I),Human,,,-15.8,12.2,,,,,,,,Alexander et al 2019
+"Carrer de Dalt, 1434",Valencia (I),Human,,,-19.8,9.7,,,,,,,,Alexander et al 2019
+"Carrer de Dalt, 1568",Valencia (I),Human,,,-18.1,11.5,,,,,,,,Alexander et al 2019
+"Carrer de Dalt, 2375",Valencia (I),Human,,,-16.6,12.1,,,,,,,,Alexander et al 2019
+"Carrer de Dalt, 1354",Valencia (I),Human,,,-17.7,10.3,,,,,,,,Alexander et al 2019
+"Carrer de Dalt, 1632",Valencia (I),Human,,,-18.8,10.1,,,,,,,,Alexander et al 2019
+"Carrer de Dalt, 2094",Valencia (I),Human,,,-19.3,11,,,,,,,,Alexander et al 2019
+"Carrer de Dalt, 1941",Valencia (I),Human,,,-19.2,10.8,,,,,,,,Alexander et al 2019
+"Carrer de Dalt, 2036",Valencia (I),Human,,,-18.8,10.3,,,,,,,,Alexander et al 2019
+"Carrer de Dalt, 1419",Valencia (I),Human,,,-19.2,10.8,,,,,,,,Alexander et al 2019
+"Carrer de Dalt, 2549",Valencia (I),Human,,,-18.4,10.5,,,,,,,,Alexander et al 2019
+"Carrer de Dalt, 2544",Valencia (I),Human,,,-15.8,11.5,,,,,,,,Alexander et al 2019
+"Carrer de Dalt, 1565",Valencia (I),Human,,,-17.3,12.2,,,,,,,,Alexander et al 2019
+"Carrer de Dalt, 1330",Valencia (I),Human,,,-18.8,10.5,,,,,,,,Alexander et al 2019
+"Carrer de Dalt, 2369",Valencia (I),Human,,,-17.6,10.6,,,,,,,,Alexander et al 2019
+"Carrer de Dalt, 2292",Valencia (I),Human,,,-18.6,9.9,,,,,,,,Alexander et al 2019
+"Carrer de Dalt, 2193",Valencia (I),Human,,,-18.3,9.3,,,,,,,,Alexander et al 2019
+"Carrer de Dalt, 1945",Valencia (I),Human,,,-19.1,10.3,,,,,,,,Alexander et al 2019
+"Carrer de Dalt, 1366",Valencia (I),Human,,,-19,11.2,,,,,,,,Alexander et al 2019
+"Carrer de Dalt, 2011",Valencia (I),Human,,,-18.5,11,,,,,,,,Alexander et al 2019
+"Carrer de Dalt, 2536",Valencia (I),Human,,,-18.8,11.4,,,,,,,,Alexander et al 2019
+"Carrer de Dalt, 2132",Valencia (I),Human,,,-18.9,10.7,,,,,,,,Alexander et al 2019
+"Carrer Pintor Sorolla, 1809",Valencia (I),Human,,,-16.3,11.8,,,,,,,,Alexander et al 2019
+"Carrer Pintor Sorolla, 1807",Valencia (I),Human,,,-15.2,12.3,,,,,,,,Alexander et al 2019
+"Carrer Pintor Sorolla, 1805",Valencia (I),Human,,,-16.6,12,,,,,,,,Alexander et al 2019
+"Carrer Sagunt, 1217",Valencia (I),Human,,,-16.7,12,,,,,,,,Alexander et al 2019
+"Carrer Sagunt, 1586",Valencia (I),Human,,,-16.9,12,,,,,,,,Alexander et al 2019
+"Carrer Sagunt, 1117",Valencia (I),Human,,,-15.8,11.7,,,,,,,,Alexander et al 2019
+"Carrer Sagunt, 1192",Valencia (I),Human,,,-17.6,14.5,,,,,,,,Alexander et al 2019
+"Carrer Sagunt, 1399",Valencia (I),Human,,,-17.1,13.4,,,,,,,,Alexander et al 2019
+"Carrer Sagunt, 1290",Valencia (I),Human,,,-17.9,12.2,,,,,,,,Alexander et al 2019
+"Carrer Sagunt, 1331",Valencia (I),Human,,,-14.2,11,,,,,,,,Alexander et al 2019
+"San Andres, 1585",Valencia (C),Human,,,-18.2,11.2,,,,,,,,Alexander et al 2019
+"San Andres, 1466",Valencia (C),Human,,,-18.1,11.7,,,,,,,,Alexander et al 2019
+"San Andres, 1549",Valencia (C),Human,,,-18.1,11.3,,,,,,,,Alexander et al 2019
+"San Andres, 1649",Valencia (C),Human,,,-18.4,10.5,,,,,,,,Alexander et al 2019
+"Carrer Sant Vincent, 3048",Valencia (C),Human,,,-18.5,11.3,,,,,,,,Alexander et al 2019
+"Carrer Sant Vincent, 3277",Valencia (C),Human,,,-19.3,9.3,,,,,,,,Alexander et al 2019
+"Carrer Sant Vincent, 3274",Valencia (C),Human,,,-17.3,11.6,,,,,,,,Alexander et al 2019
+"Carrer Sant Vincent, 3054",Valencia (C),Human,,,-18.3,10.3,,,,,,,,Alexander et al 2019
+"Carrer Sant Vincent, 3280",Valencia (C),Human,,,-18.7,8.4,,,,,,,,Alexander et al 2019
+"Carrer Sant Vincent, 3283",Valencia (C),Human,,,-18.8,8,,,,,,,,Alexander et al 2019
+"Carrer Sant Vincent, 3325",Valencia (C),Human,,,-18.4,11.6,,,,,,,,Alexander et al 2019
+"Carrer Sant Vincent, 3289",Valencia (C),Human,,,-18.9,10.1,,,,,,,,Alexander et al 2019
+"Carrer Sant Vincent, 3070",Valencia (C),Human,,,-18.5,11.3,,,,,,,,Alexander et al 2019
+"Carrer Sant Vincent, 3051",Valencia (C),Human,,,-18.8,11.1,,,,,,,,Alexander et al 2019
+"Carrer Sant Vincent, 3244",Valencia (C),Human,,,-16.8,10.6,,,,,,,,Alexander et al 2019
+"Carrer Sant Vincent, 3334",Valencia (C),Human,,,-18.1,11.3,,,,,,,,Alexander et al 2019
+"Carrer Sant Vincent, 3677",Valencia (C),Human,,,-19.1,9.1,,,,,,,,Alexander et al 2019
+"Carrer Sant Vincent, 3220",Valencia (C),Human,,,-18.5,10.9,,,,,,,,Alexander et al 2019
+"Carrer Sant Vincent, 3622",Valencia (C),Human,,,-18.7,17.1,,,,,,,,Alexander et al 2019
+Sk 503,Plymouth,Human,,,-19.5,11.1,,,,,,,,
+Sk 520,Plymouth,Human,,,-18,13.9,,,,,,,,
+Sk 523,Plymouth,Human,,,-18.9,11.6,,,,,,,,
+Sk 528,Plymouth,Human,,,-18.1,12.4,,,,,,,,
+Sk 538,Plymouth,Human,,,-19.7,10.6,,,,,,,,
+Sk 544,Plymouth,Human,,,-19,9.9,,,,,,,,
+Sk 547,Plymouth,Human,,,-18.4,11.2,,,,,,,,
+Sk 554,Plymouth,Human,,,-18.3,11.5,,,,,,,,
+Sk 564,Plymouth,Human,,,-18.6,12.1,,,,,,,,
+Sk 571,Plymouth,Human,,,-17.6,11.4,,,,,,,,
+Sk 573,Plymouth,Human,,,-18.6,10.4,,,,,,,,
+Sk 575,Plymouth,Human,,,-19.2,8.8,,,,,,,,
+Sk 584,Plymouth,Human,,,-20.9,9.6,,,,,,,,
+Sk 590,Plymouth,Human,,,-17.3,11.9,,,,,,,,
+Sk 599,Plymouth,Human,,,-18.3,11.6,,,,,,,,
+Sk 602,Plymouth,Human,,,-17.5,10.9,,,,,,,,
+Sk 605,Plymouth,Human,,,-18.8,11.9,,,,,,,,
+Sk 614,Plymouth,Human,,,-19.9,13.5,,,,,,,,
+Sk 617,Plymouth,Human,,,-18.3,11.9,,,,,,,,
+Sk 620,Plymouth,Human,,,-19.6,11.1,,,,,,,,
+Sk 624,Plymouth,Human,,,-19.9,9.6,,,,,,,,
+Sk 636,Plymouth,Human,,,-19.1,10.2,,,,,,,,
+Sk 639,Plymouth,Human,,,-19.3,10.6,,,,,,,,
+Sk 645,Plymouth,Human,,,-19.6,9.4,,,,,,,,
+Sk 657,Plymouth,Human,,,-17.4,11.2,,,,,,,,
+Sk 668,Plymouth,Human,,,-17.3,9.3,,,,,,,,
+Sk 674,Plymouth,Human,,,-19.1,13.1,,,,,,,,
+Sk 680,Plymouth,Human,,,-19.4,11,,,,,,,,
+Sk 685,Plymouth,Human,,,-19.5,11.1,,,,,,,,
+Sk 693,Plymouth,Human,,,-18.3,9.8,,,,,,,,
+Sk 702,Plymouth,Human,,,-19.6,10.4,,,,,,,,
+Sk 730,Plymouth,Human,,,-19.5,7.6,,,,,,,,
+Sk 748,Plymouth,Human,,,-17.7,11.1,,,,,,,,
+Sk 754,Plymouth,Human,,,-17.4,11.5,,,,,,,,
+Sk 757,Plymouth,Human,,,-17.3,13.9,,,,,,,,
+Sk 781,Plymouth,Human,,,-18.2,12,,,,,,,,
+Sk 792,Plymouth,Human,,,-18.4,11.2,,,,,,,,
+Sk 815,Plymouth,Human,,,-20.7,10.1,,,,,,,,
+Sk 835,Plymouth,Human,,,-17.7,13.4,,,,,,,,
+Sk 844,Plymouth,Human,,,-16.2,11.7,,,,,,,,
+Sk 849,Plymouth,Human,,,-19.2,11.5,,,,,,,,
+Sk 870,Plymouth,Human,,,-20.1,9.1,,,,,,,,
+Sk 897,Plymouth,Human,,,-20,11.5,,,,,,,,
+Sk 910,Plymouth,Human,,,-18.2,14,,,,,,,,
+Sk 913,Plymouth,Human,,,-19.9,10.3,,,,,,,,
+Sk 941,Plymouth,Human,,,-19.4,9.7,,,,,,,,
+Sk 954,Plymouth,Human,,,-18.3,11.1,,,,,,,,
+Sk 960,Plymouth,Human,,,-18.2,9.9,,,,,,,,
+Sk 975,Plymouth,Human,,,-19.6,9.3,,,,,,,,
+Sk 976,Plymouth,Human,,,-19.5,10.6,,,,,,,,
+HAS 07 B001,Haslar,Human,,,-20.5,12.4,,,,,,,,
+HAS 07 B002,Haslar,Human,,,-20.3,13.2,,,,,,,,
+HAS 07 B003,Haslar,Human,,,-19.9,11.8,,,,,,,,
+HAS 07 B004,Haslar,Human,,,-20.6,13.1,,,,,,,,
+HAS 07 B007,Haslar,Human,,,-20.7,10.8,,,,,,,,
+HAS 07 B009,Haslar,Human,,,-19.8,12.4,,,,,,,,
+HAS 07 B010,Haslar,Human,,,-20,11.7,,,,,,,,
+HAS 08 TP4,Haslar,Human,,,-19.8,11.2,,,,,,,,
+HAS 08 B102,Haslar,Human,,,-18.7,11.4,,,,,,,,
+HAS 08 B103,Haslar,Human,,,-17.8,12.1,,,,,,,,
+HAS 08 B104,Haslar,Human,,,-20.8,12.6,,,,,,,,
+HAS 08 B106,Haslar,Human,,,-21.2,11.4,,,,,,,,
+HAS 08 B108,Haslar,Human,,,-20.7,12.2,,,,,,,,
+HAS 08 B110,Haslar,Human,,,-20.1,11.7,,,,,,,,
+HAS 08 B112,Haslar,Human,,,-20.6,11.8,,,,,,,,
+HAS 08 B113,Haslar,Human,,,-20.7,11.4,,,,,,,,
+HAS 08 B114,Haslar,Human,,,-21,12.3,,,,,,,,
+HAS 09 B211,Haslar,Human,,,-19.4,12.4,,,,,,,,
+HAS 09 B212,Haslar,Human,,,-20.9,10.8,,,,,,,,
+HAS 09 B213,Haslar,Human,,,-19.8,12.4,,,,,,,,
+HAS 09 B214,Haslar,Human,,,-19.3,12.1,,,,,,,,
+HAS 09 B215,Haslar,Human,,,-20,12.1,,,,,,,,
+HAS 09 B216,Haslar,Human,,,-20.4,11.2,,,,,,,,
+HAS 09 B217,Haslar,Human,,,-20.2,11.4,,,,,,,,
+HAS 09 B218,Haslar,Human,,,-20.3,11.6,,,,,,,,
+HAS 09 B219,Haslar,Human,,,-19.6,11.9,,,,,,,,
+HAS 09 B220,Haslar,Human,,,-20.3,11.8,,,,,,,,
+HAS 09 B221,Haslar,Human,,,-19,11.2,,,,,,,,
+HAS 09 B231,Haslar,Human,,,-20.1,11.2,,,,,,,,
+10,Mary Rose,Human,,,-19,13.3,,,,,,,,
+12,Mary Rose,Human,,,-19.6,11.2,,,,,,,,
+13,Mary Rose,Human,,,-19.5,11.2,,,,,,,,
+14,Mary Rose,Human,,,-19.7,10.6,,,,,,,,
+15,Mary Rose,Human,,,-19.8,11.4,,,,,,,,
+16,Mary Rose,Human,,,-19.4,12.2,,,,,,,,
+17,Mary Rose,Human,,,-18.9,12.1,,,,,,,,
+18,Mary Rose,Human,,,-19.2,11.7,,,,,,,,
+1,Mary Rose,Human,,,-20,9.1,,,,,,,,
+2,Mary Rose,Human,,,-19.7,11.4,,,,,,,,
+3,Mary Rose,Human,,,-18.9,12.5,,,,,,,,
+4,Mary Rose,Human,,,-19.3,11.8,,,,,,,,
+5,Mary Rose,Human,,,-19.2,11.4,,,,,,,,
+6,Mary Rose,Human,,,-19.6,12.5,,,,,,,,
+7,Mary Rose,Human,,,-19.6,9.9,,,,,,,,
+9,Mary Rose,Human,,,-19.2,12,,,,,,,,
+8,Mary Rose,Human,,,-19.1,10.3,,,,,,,,
+81/H64,Mary Rose,Human,,,-19.6,10.6,,,,,,,,
